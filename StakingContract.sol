@@ -8,7 +8,7 @@ import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
 contract StakingContract is ReentrancyGuard, Ownable {
     uint256 public constant BASIS_POINTS = 10000;
     uint256 public constant SECONDS_PER_YEAR = 365 * 24 * 3600;
-    uint256 public constant DECIMAL_FACTOR = 1e18;
+    uint256 public constant DECIMAL_FACTOR = 1e17;
     uint256 public immutable DEPLOY_TIMESTAMP;
 
     uint256 public apyBasisPoints = 500;
